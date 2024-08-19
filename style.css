@@ -1,20 +1,3 @@
-@charset "UTF-8";
-/*
-Theme Name: Bootstrap To WordPress
-Theme URI: https://bootstraptowordpress.com
-Author: Brad Hussey
-Author URI: https://www.bradhussey.ca
-Description: Bootstrap to WordPress Course Theme
-Requires at least: 4.9.6
-Requires PHP: 5.2.4
-Version: 2.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: bootstrap2wordpress
-*/
-
-
-
 /* Variables */
 :root {
   --font-sans: "Inter", Helvetica, sans-serif;
@@ -41,9 +24,6 @@ p {
   color: #000;
   font-weight: 400;
 }
-.elementor-widget-text-editor p {
-  color: inherit;
-}
 em {
   color: #828282;
   font-weight: 500;
@@ -62,51 +42,30 @@ h3 {
 }
 h1 {
   color: var(--color-light);
-  font-size: calc(var(--font-size) * 3.2);
+  font-size: 3.5rem;
 }
-
 h2 {
   color: var(--color-dark);
-  font-size: calc(var(--font-size) * 2.8);
+  font-size: 2.8rem;
   margin-bottom: 1rem;
   transition: var(--transition-dur);
 }
 h3 {
   color: var(--color-dark);
-  font-size: calc(var(--font-size) * 2);
+  font-size: 2rem;
   margin-bottom: 0.9rem;
 }
 h4 {
-  font-size: calc(var(--font-size) * 1.2);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: calc(var(--font-size) * 2.6);
-  }
-  h2 {
-    font-size: calc(var(--font-size) * 1.8);
-  }
-  h3 {
-    font-size: calc(var(--font-size) * 1.4);
-  }
-  h4 {
-    font-size: var(--font-size);
-  }
-}
-
-.testimonial, blockquote.wp-block-quote {
+.testimonial {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-style: italic;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
-  margin: 2rem 0 2rem 2rem;
-}
-
-.testimonial p, blockquote.wp-block-quote p {
-  color: rgba(0,0,0,0.6);
 }
 
 .testimonial cite {
@@ -123,7 +82,6 @@ cite span {
 .spacer {
   margin: 75px 0;
 }
-
 
 /* Button Styles */
 
@@ -176,7 +134,6 @@ input[type="text"] {
 #top-navigation {
   position: absolute;
   width: 100%;
-  z-index: 99;
 }
 .main-menu .navigation {
   position: static;
@@ -200,15 +157,6 @@ input[type="text"] {
 
 .main-menu .navigation > li:last-child {
   margin-right: 0;
-}
-
-.main-menu .navigation > li:last-child a {
-  color: var(--color-yellow);
-}
-
-.main-menu .navigation > li:last-child a:hover {
-  color: var(--color-yellow);
-  opacity: 0.8;
 }
 
 .main-menu .navigation > li:hover > a,
@@ -457,7 +405,7 @@ input[type="text"] {
 .navbar-open {
   position: relative;
   display: none;
-  background-color: unset !important;
+  background-color: unset;
   padding: 0;
   border: none;
   position: absolute;
@@ -721,7 +669,7 @@ input[type="text"] {
 /* Content Section */
 
 .content-area {
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 /* Post List */
@@ -767,41 +715,6 @@ article.post {
   color: var(--color-green);
   padding-left: 5px;
 }
-
-.b2w-pagination {
-	position: relative;
-	padding-top: 40px;
-	text-align: center;
-}
-
-.b2w-pagination li {
-	position: relative;
-	margin-left: 6px;
-	display: inline-block;
-}
-
-.b2w-pagination li .page-numbers {
-  position: relative;
-	width: 40px;
-	height: 40px;
-  color: #161616;
-	font-size: 16px;
-	font-weight: 400;
-  line-height: 40px;
-	text-align: center;
-	border-radius: 50px;
-  display: inline-block;
-	transition: all var(--transition-dur) ease;
-}
-
-.b2w-pagination li .page-numbers.current,
-.b2w-pagination li:hover a {
-  color: #fff;
-  background-color: #F50057;
-}
-
-
-
 
 /* Footer Section */
 
@@ -922,15 +835,6 @@ article.post {
   margin: 20px 0;
 }
 
-@media screen and (max-width: 768px) {
-  .section-call-to-action {
-    padding: 40px 40px;
-  }
-  .section-call-to-action h2 {
-    font-size: 2rem;
-  }
-}
-
 .section-call-to-action .underlay-bg {
   position: absolute;
   top: 0;
@@ -984,8 +888,4 @@ article.post {
 
 .section-call-to-action .sub-title {
   color: var(--color-yellow);
-}
-
-.wp-post-image {
-  margin-bottom: 2rem;
 }
